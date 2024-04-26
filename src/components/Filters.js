@@ -10,7 +10,7 @@ const Filters = ({ categories, selectedCategory, setSelectedCategory }) => {
                 return (
                     <div className="category">
                         <input
-                            id={`filter-btn${index}`}
+                            id={`filter-btn-${index}`}
                             type="radio"
                             name="category"
                             value={category}
