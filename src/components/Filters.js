@@ -11,6 +11,7 @@ const Filters = ({ categories, selectedCategory, setSelectedCategory }) => {
                     <div className="category">
                         <input
                             id={`filter-btn-${index}`}
+                            data-test-id={`menu-item-${category}`}
                             type="radio"
                             name="category"
                             value={category}
