@@ -19,7 +19,7 @@ const Filters = ({ categories, selectedCategory, setSelectedCategory }) => {
                             onChange={(e) => (setSelectedCategory(e.target.value))}
                         />
                         <label
-                            htmlFor={`filter-btn${index}`}>
+                            htmlFor={`filter-btn-${index}`}>
                             {category}
                         </label>
 
