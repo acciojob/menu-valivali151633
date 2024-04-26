@@ -90,7 +90,7 @@ const menuData = [
   
 
     return(
-       <div className="menu">
+       <div className="main">
          <h1>Our Menu</h1>
          <Filters 
             categories={categories} 

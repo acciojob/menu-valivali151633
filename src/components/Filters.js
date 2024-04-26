@@ -5,12 +5,12 @@ const Filters = ({ categories, selectedCategory, setSelectedCategory }) => {
 
     return <div className="categories">
         {
-            categories.map(category => {
+            categories.map((category,index) => {
                     
                 return (
                     <div className="category">
                         <input
-                            id={category}
+                            id={`filter-btn${index}`}
                             type="radio"
                             name="category"
                             value={category}
@@ -18,7 +18,7 @@ const Filters = ({ categories, selectedCategory, setSelectedCategory }) => {
                             onChange={(e) => (setSelectedCategory(e.target.value))}
                         />
                         <label
-                            htmlFor={category}>
+                            htmlFor={`filter-btn${index}`}>
                             {category}
                         </label>
 
@@ -27,6 +27,7 @@ const Filters = ({ categories, selectedCategory, setSelectedCategory }) => {
             })
        }
 </div>
+
 }
 
 
